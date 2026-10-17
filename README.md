@@ -1,3 +1,5 @@
+<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/3e248fc7-36a4-41b7-a8e5-b6333b34b889" />
+
 # dotfiles — i3 / polybar / picom / rofi / fastfetch
 
 Config files for the monochrome i3 desktop setup.
