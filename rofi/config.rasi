@@ -1,0 +1,138 @@
+configuration {
+    modi: "drun,run,window";
+    font: "monospace 11";
+    show-icons: true;
+    icon-theme: "Adwaita";
+    terminal: "i3-sensible-terminal";
+    drun-display-format: "{name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "  Apps  ";
+    display-run: "  Run  ";
+    display-window: "  Window  ";
+    sidebar-mode: true;
+}
+
+@theme "/dev/null"
+
+* {
+    bg: #000000;
+    bg-alt: #000000;
+    fg: #FFFFFF;
+    fg-alt: #FFFFFF;
+
+    blue: #88C0D0;
+    red: #BF616A;
+    green: #A3BE8C;
+    yellow: #EBCB8B;
+    purple: #B48EAD;
+    orange: #D08770;
+
+    background-color: @bg;
+    text-color: @fg;
+}
+
+window {
+    width: 45%;
+    height: 55%;
+    border: 2px;
+    border-color: @blue;
+    border-radius: 12px;
+    background-color: @bg;
+    padding: 0;
+}
+
+mainbox {
+    background-color: transparent;
+    padding: 20px;
+    spacing: 0;
+}
+
+inputbar {
+    spacing: 12px;
+    padding: 12px 16px;
+    background-color: @bg-alt;
+    border-radius: 8px;
+    margin: 0 0 16px 0;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @blue;
+    font: "monospace Bold 12";
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg;
+    placeholder: "Search...";
+    placeholder-color: @fg-alt;
+    cursor: text;
+}
+
+listview {
+    background-color: transparent;
+    spacing: 4px;
+    lines: 10;
+    fixed-height: false;
+    dynamic: true;
+    scrollbar: false;
+}
+
+element {
+    padding: 10px 16px;
+    spacing: 12px;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+element-icon {
+    size: 24px;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: @fg;
+    vertical-align: 0.5;
+}
+
+element normal.normal, element alternate.normal {
+    background-color: transparent;
+}
+
+element selected.normal {
+    background-color: @blue;
+    text-color: @bg;
+}
+
+element selected.active {
+    background-color: @green;
+    text-color: @bg;
+}
+
+element selected.urgent {
+    background-color: @red;
+    text-color: @bg;
+}
+
+mode-switcher {
+    spacing: 12px;
+    margin: 16px 0 0 0;
+    background-color: transparent;
+}
+
+button {
+    padding: 8px 20px;
+    border-radius: 6px;
+    background-color: @bg-alt;
+    text-color: @fg-alt;
+    font: "monospace Bold 10";
+}
+
+button selected {
+    background-color: @blue;
+    text-color: @bg;
+}
